@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body {
+
+} */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+p {
+    color: #555;
+}
+
+.container {
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.col-2 {
+    flex-basis: 30%;
+    min-width: 300px;
+
+}
+
+.col-2 img {
+    max-width: 100%;
+    padding: 10px;
+}
+
+.col-2 h1 {
+    font-size: 50px;
+    line-height: 50px;
+    margin: 25px 0;
+}
+
+
+
+
+.btn~hover {
+    background: #563434;
+}
+
+.header {
+    background: radial-gradient(rgb(188, 219, 226), #9dd8eb);
+}
+
+.header .row {
+    margin-top: 100px;
+}
+
+.categories {
+    margin: 70px 0;
+}
+
+.col-3 {
+    flex-basis: 60%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+
+.col-3 img {
+    width: 300px;
+}
+
+.small-container {
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.prod {
+    display: flex;
+    flex-direction: row;
+}
+
+Basket Title .tit {
+    width: 100px;
+    padding-left: 20px;
+}
+
+#price1,
+#price2,
+#price3,
+#price4,
+#price5,
+#price6 {
+    margin-right: 5px;
+    margin-left: 70px;
+}
+
+
+/* Add to basket button */
+
+.addTo {
+    position: relative;
+    width: 100px;
+    height: 25px;
+    border-radius: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-image: linear-gradient(to right, #5040da, #2555ad);
+    color: beige;
+    border-width: 0px;
+}
+
+
+
+/* Add to basket hover effect */
+.addTo:hover {
+    background-image: none;
+    background-color: rgb(70, 110, 243);
+}
+
+li {
+    list-style: none;
+    padding-top: 2px;
+    padding-bottom: 0px;
+} 
+
+
+/* Remove from basket button */
+
+button {
+    position: absolute;
+    right: 20px;
+    border-radius: 100px;
+    color: rgb(255, 255, 255);
+    background-color: #d31d1d;
+    border-width: px;
+}
+
+/* Quantity box style */
+
+inputs,
+input {
+    width: 50px;
+    left: 10px;
+    text-align: center;
+    border-radius: 10px;
+    margin-right: 20px;
+    margin-left: 5px;
+}
+
+
+/* Menu icon style */
+
+.menu-icon {
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+}
+
+
+/* Media Query for the Menu */
+
+@media only screen and (max-width: 800px) {
+    nav ul {
+        position: absolute;
+        top: 110px;
+        left: 0;
+        background: radial-gradient(rgb(127, 175, 187), #8bc3e4);
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+    nav ul li {
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a {
+        color: white;
+    }
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+    /* Media Query for screen size less than 600px */
+    @media only screen and (max-width: 600px) {
+        .row {
+            text-align: center;
+        }
+        .col-2,
+        .col-3 {
+            flex-basis: 100%;
+        }
+    }
+}
